@@ -1,0 +1,111 @@
+.calendar-wrapper{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 572px;
+}
+
+.calendar-content{
+    border: 1px solid #c3c3c3;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.day-block{
+    width: 50px;
+    padding: 14px;
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+}
+
+
+/*header-text*/
+.header-text-calendar{
+    display: flex;
+    padding-left: 43px;
+}
+
+.day-header-text{
+    width: 45px;
+    padding: 10px;
+    display: block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.header-time-interval{
+    display: flex;
+    align-items: center;
+}
+
+.header-time-interval span{
+    width: 60px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.block-day-all{
+    width: 51px;
+    height: 51px;
+    display: block;
+    background: #949494;
+    border-bottom: 1px solid #fff;
+}
+
+.header-time-interval span:after,
+.day-header-text:after{
+    content: '';
+    width: 2px;
+    height: 15px;
+    background: #c3c3c3;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -4px;
+}
+
+.day-header-text:after{
+    bottom: 0px;
+}
+
+.hour-block{
+    width: 100%;
+    display: block;
+}
+
+.day-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-three-item{
+    display: flex;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+
+.one-hour-item{
+    width: 20px;
+    border-right: 1px solid #c3c3c3;
+    height: 50px;
+    padding: 0;
+    position: relative;
+}
+
+.one-hour-item.active{
+    background: #e8e8e8;
+}
+
+.btn-block{
+    text-align: right;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.btn-block button{
+    margin-left: 20px;
+}
